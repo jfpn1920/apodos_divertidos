@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apodos divertidos</title>
+    <link rel="stylesheet" href="apodos_divertidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="apodos_divertidos.js" defer></script>
+</head>
+<body>
+    <!-------------------------------------->
+    <!--|estructuracion_apodos_divertidos|-->
+    <!-------------------------------------->
+    <header class="encabezado">
+        <div class="contenido_encabezado">
+            <span class="icono">😎</span>
+            <h1>Apodos Divertidos</h1>
+            <p>Escribe tu apodo y dale personalidad a tu perfil.</p>
+        </div>
+    </header>
+    <main class="contenedor_principal">
+        <!---------------------------->
+        <!--|presentacion_del_apodo|-->
+        <!---------------------------->
+        <section class="presentacion">
+            <div class="decoracion decoracion_uno">⭐</div>
+            <div class="decoracion decoracion_dos">🎮</div>
+            <p class="etiqueta">TU APODO ES</p>
+            <div class="tarjeta_apodo">
+                <span class="simbolo">"</span>
+                <h2 id="apodoMostrado">Sin apodo</h2>
+                <span class="simbolo">"</span>
+            </div>
+            <p id="mensajeApodo" class="mensaje_apodo">
+                Escribe un apodo para comenzar.
+            </p>
+        </section>
+        <!------------------------->
+        <!--|formulario_de_apodo|-->
+        <!------------------------->
+        <section class="zona_formulario">
+            <div class="titulo_formulario">
+                <h2>Crear mi apodo</h2>
+                <p>Escribe algo divertido y presiona guardar.</p>
+            </div>
+            <div class="formulario">
+                <label for="campoApodo">Escribe tu apodo</label>
+                <div class="campo_contenedor">
+                    <span>✏️</span>
+                    <input
+                        id="campoApodo"
+                        type="text"
+                        maxlength="30"
+                        placeholder="Ejemplo: El Crack"
+                    >
+                </div>
+                <div class="acciones">
+                    <button id="botonGuardar">Guardar apodo</button>
+                    <button id="botonLimpiar">Limpiar</button>
+                </div>
+                <p id="mensajeFormulario" class="mensaje_formulario"></p>
+            </div>
+        </section>
+        <!------------------------->
+        <!--|historial_de_apodos|-->
+        <!------------------------->
+        <section class="historial">
+            <div class="titulo_historial">
+                <h2>Apodo guardado</h2>
+                <span>💾</span>
+            </div>
+            <div id="contenedorHistorial" class="contenedor_historial">
+                <p class="sin_historial">Todavía no hay un apodo guardado.</p>
+            </div>
+            <button id="botonRestaurar">Restaurar apodo</button>
+        </section>
+        <!-------------------------------->
+        <!--|restablecer_la_informacion|-->
+        <!-------------------------------->
+        <section class="zona_final">
+            <button id="botonRestablecer">Restablecer todo</button>
+            <p id="mensajeGeneral"></p>
+        </section>
+    </main>
+</body>
+</html>
